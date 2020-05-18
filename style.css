@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.app{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+}
+
+header{
+    background-color:tomato ;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    background-color:#fb1 ;
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color:seagreen ;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
